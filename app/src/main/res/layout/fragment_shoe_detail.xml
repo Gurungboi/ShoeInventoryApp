@@ -45,7 +45,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/shoe_name_label"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintVertical_bias="0.49"
             tools:ignore="LabelFor" />
 
         <TextView
@@ -62,7 +63,7 @@
         <EditText
             android:id="@+id/shoe_company_input"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="45dp"
             android:autofillHints="Shoe company"
             android:hint="@string/enter_shoe_company"
             android:inputType="text"
@@ -150,6 +151,21 @@
             app:layout_constraintStart_toEndOf="@+id/save_button"
             app:layout_constraintTop_toBottomOf="@+id/shoe_description_input"
             tools:ignore="ButtonStyle" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="92dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="93dp"
+            android:layout_marginBottom="8dp"
+            android:text="Shoes Details"
+            android:textSize="@dimen/dimen_32dp"
+            app:layout_constraintBottom_toTopOf="@+id/shoe_name_input"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

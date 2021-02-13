@@ -30,4 +30,8 @@
 
 
     <string name="shopping_time">It\'s Shopping Time</string>
+    <string name="description">Description:</string>
+    <string name="name">Name:</string>
+    <string name="size">Size:</string>
+    <string name="company">Company:</string>
 </resources>
