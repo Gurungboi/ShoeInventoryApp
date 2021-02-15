@@ -2,14 +2,16 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <androidx.coordinatorlayout.widget.CoordinatorLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <ScrollView
             android:id="@+id/scrollViewShoeList"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            app:layout_constraintStart_toStartOf = "parent"
+            app:layout_constraintTop_toTopOf = "parent">
 
             <LinearLayout
                 android:id="@+id/shoes_container"
@@ -23,13 +25,15 @@
             android:id="@+id/add_shoe_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="@dimen/dimen_16dp"
-            android:layout_marginBottom="@dimen/dimen_16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
             android:contentDescription="@string/add_shoe"
             android:src="@drawable/ic_add"
-            app:layout_anchor="@+id/scrollViewShoeList"
-            app:layout_anchorGravity="end|bottom" />
+            app:layout_constraintBottom_toBottomOf="parent"
 
-    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </layout>
